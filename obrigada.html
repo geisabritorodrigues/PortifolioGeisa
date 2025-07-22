@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mensagem Enviada</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pO1ePQdI1sGpnzGQ2O1K2S9qWJcIEbqa8aO6J3FAxT7ZCM5OAI2zEISZJuZV1an+bwC2oYIpHk9HD3+YPbAHQw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Titillium Web', sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .mensagem {
+      text-align: center;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .mensagem .icone-sucesso {
+      font-size: 60px;
+      color: #4BB543;
+      margin-bottom: 20px;
+      animation: bounce 1s ease;
+    }
+
+    .mensagem h1 {
+      color: #8e2098;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .mensagem p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .mensagem a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #8e2098;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .mensagem a:hover {
+      background-color: #6c1a7a;
+    }
+
+    @keyframes bounce {
+      0%   { transform: scale(0.9); opacity: 0; }
+      50%  { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+    @media (max-width: 768px) {
+      nav.navegacao ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mensagem">
+    <div class="icone-sucesso">
+      <i class="fas fa-check-circle"></i> 
+    </div>
+    <h1>Mensagem enviada com sucesso!</h1>
+    <p>Obrigada por entrar em contato. Em breve retornarei sua mensagem.</p>
+    <a href="index.html">Voltar ao site</a>
+  </div>
+</body>
+
+</html>

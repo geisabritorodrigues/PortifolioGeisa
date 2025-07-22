@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geisa Rodrigues</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fontes.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1;100..900&display=swap"
+        rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+
+
+</head>
+
+    <body>
+     <header id="menu">
+        <h1 class="logo">Geisa Rodrigues</h1>
+        <nav class="navegacao">
+          <ul>
+            <li><a href="#sobre"> Quem sou eu</a></li>
+            <li><a href="#formacao"> Formação</a></li>
+            <li><a href="#experiencias"> Experiências</a></li>
+            <li><a href="#contato"> Contato</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+          <img src="imagens/imggeisa.jpg" alt="Minha foto sorrindo (Geisa)" class="sobre-imagem" />
+          <h2 class="sobre-nome">Geisa Rodrigues</h2>
+          <h3 class="sobre-titulo">Analista de Suporte Técnico</h3>
+
+    <p class="sobre-descricao">
+            Sou <strong>Analista de Suporte Técnico</strong> e  também empreendedora no ramo
+            de cosméticos. <br />
+            Mãe do <em>Ravy</em> de 9 anos, esposa do <em>Rafael</em>,  e apaixonada por séries de romance
+            e investigação policial.<br/>
+            Sou graduada em <strong>Gestão da Tecnologia da Informação</strong> pelo <em>IFSC </em>e pós-graduada em <strong>Segurança da 
+            Informação</strong> pela <em>UNIP</em>.<br/>
+            Atualmente, estou focada em <strong>ampliar meus conhecimentos na área de Segurança da Informação</strong>, 
+            com o objetivo de <strong>realizar uma transição de carreira</strong> para esse segmento.
+        </p>
+    </section>
+
+<section id="formacao" class="secao">
+  <h2>Formação</h2>
+  <div class="lista">
+    <div class="item">
+      <h3>Gestão da Tecnologia da Informação</h3>
+      <a href="https://www.ifsc.edu.br/" target="_blank">
+        Instituto Federal de Santa Catarina - IFSC </a>
+      <P>Março de 2018 - Março de 2022</P>
+    </div>
+    <div class="item">
+      <h3>Segurança da Informação</h3>
+      <a href="https://www.posunip.com.br/" target="_blank">
+        Universidade Paulista - UNIP</a>
+      <P>Julho de 2023 - Julho de 2024</P>
+    </div>
+    <div class="item">
+      <h3>Curso de Programação</h3>
+      <a href="https://minasprogramam.com/" target="_blank">
+        Minas Programam
+      </a>
+      <p>Participação no curso <strong>"Introdução à Programação"</strong> do Minas Programam, projetado e ministrado exclusivamente por mulheres. </br>
+      Em 2025</p>
+    </div>
+  </div>
+</section>
+
+<section id="experiencias" class="secao">
+  <h2>Experiências</h2>
+  <div class="lista">
+    <div class="item">
+      <h3>Analista de Suporte Técnico</h3>
+      <a href="https://progic.com.br/" target="_blank">PROGIC</a>
+      <p>Atendimento ao cliente </br>
+        Outubro de 2021 - atual
+      </p>
+    </div>
+    <div class="item">
+      <h3>Empreendedora</h3>
+      <a>Loja de cosméticos</a>
+      <p>Avon, Boticário, Eudora e Natura</p>
+    </div>
+  </div>
+</section>
+
+    <section id="contato">
+        <h2 class="contato-titulo"> Entre em contato comigo</h2>
+        <form class="contato-formulario" action="https://formsubmit.co/geisa.sml@hotmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="obrigada.html">
+
+          <div class="contato-grupoinput">
+           <div class="contato-input">
+             <label for="nome">Nome:</label>
+             <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+           </div>
+            
+           <div class="contato-input">
+              <label for="email">E-mail:</label> 
+              <input type="email" id="email" name="email" placeholder="Seu e-mail" required />
+            </div>
+          </div>
+          <div class="contato-input">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva a sua mensagem" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" aria-label="Enviar formulário">Enviar</button>
+        </form>
+   </section>  
+
+ </main>
+
+<footer id="rodape">
+  <p>Copyright &copy; 2025 - by Geisa Rodrigues</p>
+
+  <div class="redes-sociais">
+    <a href="https://www.facebook.com/profile.php?id=100004513209102" aria-label="Facebook" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/geisabritorodrigues" aria-label="Instagram" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/geisabritorodrigues/" aria-label="linkedin" target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+ </div>
+</footer>
+
+<button id="btnTopo" title="Voltar ao topo">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+    const btnTopo = document.getElementById('btnTopo');
+
+    // Mostra o botão quando rolar para baixo
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            btnTopo.style.display = 'flex';
+        } else {
+            btnTopo.style.display = 'none';
+        }
+    });
+
+    // Volta para o topo ao clicar
+    btnTopo.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+</body>
+
+</html>
