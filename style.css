@@ -177,72 +177,94 @@ section {
 
 /*Formulario */
 #contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 50px 20px;
 }
 
 .contato-titulo {
-    color: #8e2098;
-    font-size: 30PX;
-    margin-bottom: 30px;
-    text-align: center;
+   color: #8e2098;
+   font-size: 30PX;
+   margin-bottom: 30px;
+   text-align: center;
 }
 
 .contato-formulario {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    max-width: 700px; /* limite para desktop */
-    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;  /* limite para desktop */
     gap: 20px;
-}
-
-.contato-grupoinput {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+    margin: 0 auto; /* centraliza */
 }
 
 .contato-input {
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+.contato-grupoinput {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px; 
+    gap: 20px;
+    margin: 0 auto;
+
+}
+
+.contato-grupoinput input {
+    width: 320px; /* Aumentei a largura para 320px */
+    padding: 14px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.contato-input {
     flex: 1;
+    display:flex;
+    flex-direction: column;
 }
 
-.contato-input input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-}
-
+.contato-input input,
 .contato-input textarea {
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     font-size: 16px;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
-
+/* Campo de mensagem ocupa toda a largura */
+.contato-formulario textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+}
 /*botão volta ao topo */
 
 button[type="submit"] {
- background-color: #8e2098;
- color: white;
- font-size: 18px;
- padding: 10px;    
- border: none;
- cursor: pointer;
- transition: background 0.3s;
+    width: 100%;
+    background-color: #8e2098;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
-    button[type="submit"]:hover {
-      background-color: #6c1a7a;
-    }
-
-.mensagem-sucesso {
-  text-align: center;
-  color: green;
-  font-size: 18px;
-  margin-top: 20px;
-    }
+button[type="submit"]:hover {
+    background-color: #6c1a7a;
+}
   /*Rodapé*/
   footer {
   text-align: center;
